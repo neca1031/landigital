@@ -14,7 +14,6 @@ export const HeroWrapper = styled.div`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 `;
 
 export const HeroContent = styled.div`
