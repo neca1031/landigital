@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
 import {
-    NavLogo,
-    NavItems,
-    Header,
-    NavItem,
-    NavButton,
-    Mobile,
-    HeroWrapper,
-    HeroContent,
-    HWrapper,
-    H4,
-    H2Wrapper,
-    H2,
-    PWrapper,
-    P,
-    HeroContainer,
-  } from "./BlogHeroStyles";
-  import Link from 'next/link';
+  NavLogo,
+  NavItems,
+  Header,
+  NavItem,
+  NavButton,
+  Mobile,
+  HeroWrapper,
+  HeroContent,
+  HWrapper,
+  H4,
+  H2Wrapper,
+  H2,
+  PWrapper,
+  P,
+  HeroContainer,
+} from "./BlogHeroStyles";
+import Link from "next/link";
 
-const BlogHero = ({toggle} : {toggle:any}) => {
-    return (
-        <HeroWrapper>
+const BlogHero = ({ toggle }: { toggle: any }) => {
+  return (
+    <HeroWrapper>
       <Header>
         <Link href="/">
           <NavLogo src={"/lan-logo1.png"}></NavLogo>
@@ -43,15 +43,18 @@ const BlogHero = ({toggle} : {toggle:any}) => {
             <H2Wrapper>
               <H2>Dobrodošli na naš Blog</H2>
             </H2Wrapper>
-            {/* <H4>Iz prve ruke</H4> */}
+
             <PWrapper>
-              <P>U našim objavama možete pročitati o relevantnim i zanimljivim temama iz sveta digitalnog marketinga</P>
+              <P>
+                U našim objavama možete pročitati o relevantnim i zanimljivim
+                temama iz sveta digitalnog marketinga
+              </P>
             </PWrapper>
           </HWrapper>
         </HeroContent>
       </HeroContainer>
     </HeroWrapper>
-    )
-}
+  );
+};
 
-export default BlogHero
+export default BlogHero;

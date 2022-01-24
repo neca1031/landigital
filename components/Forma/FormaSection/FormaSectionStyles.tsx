@@ -63,7 +63,7 @@ export const ErrorMessage = styled.p`
   font-size: 1rem;
   text-align: left;
   color: #d6411c;
-
+  font-weight: 700;
   margin-bottom: 1rem;
 `;
 
@@ -71,6 +71,6 @@ export const SuccessMessage = styled.p`
   font-size: 1rem;
   text-align: left;
   color: green;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 2rem;
 `;

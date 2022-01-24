@@ -16,6 +16,7 @@ import {
   EmailIcon,
   Email,
 } from "./KontaktSectionStyles";
+import Link from "next/link";
 
 const KontaktSection = () => {
   return (
@@ -32,7 +33,9 @@ const KontaktSection = () => {
               </FormInfo>
             </FormText>
             <ButtonContainer>
-              <FormButton>kontakirajte nas</FormButton>
+              <Link href="/forma">
+                <FormButton>kontakirajte nas</FormButton>
+              </Link>
             </ButtonContainer>
           </ContactForm>
         </ContactFormContainer>
