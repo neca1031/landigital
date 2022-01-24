@@ -16,14 +16,15 @@ import {
     P,
     HeroContainer,
   } from "./BlogHeroStyles";
+  import Link from 'next/link';
 
-const BlogHero = ({toggle}) => {
+const BlogHero = ({toggle} : {toggle:any}) => {
     return (
         <HeroWrapper>
       <Header>
-        <a href="/">
+        <Link href="/">
           <NavLogo src={"/lan-logo1.png"}></NavLogo>
-        </a>
+        </Link>
         <Mobile onClick={toggle}></Mobile>
         <NavItems>
           <NavItem href="/">Početna</NavItem>
@@ -31,16 +32,16 @@ const BlogHero = ({toggle}) => {
           <NavItem href="/about">O nama</NavItem>
           <NavItem href="/usluge">Usluge</NavItem>
           <NavItem href="/kontakt">Kontakt</NavItem>
-          <a href="/forma">
+          <Link href="/forma" passHref>
             <NavButton>Pošaljite upit</NavButton>
-          </a>
+          </Link>
         </NavItems>
       </Header>
       <HeroContainer>
         <HeroContent>
           <HWrapper>
             <H2Wrapper>
-              <H2>Dobrodosli na nas Blog</H2>
+              <H2>Dobrodošli na naš Blog</H2>
             </H2Wrapper>
             {/* <H4>Iz prve ruke</H4> */}
             <PWrapper>

@@ -13,13 +13,13 @@ import {
   ButtonIcon,
 } from "./BlogSectionStyles";
 import moment from 'moment';
-const BlogSection = ({ posts }) => {
+const BlogSection = ({ posts } : {posts:any}) => {
     
   return (
     <BlogSectionContainer>
       <ObjaveHeading>Poslednje Objave</ObjaveHeading>
       <ObjaveContainer>
-        {posts.map((post) => {
+        {posts.map((post:any) => {
           return (
             <Objava key={post.slug}>
               <Slika src={post.feature_image}></Slika>
@@ -29,7 +29,7 @@ const BlogSection = ({ posts }) => {
               
               <ObjavaVreme>{moment(post.published_at).format('MMM DD, YYYY')}</ObjavaVreme>
               <ObjavaP>{post.custom_excerpt}</ObjavaP>
-              <Link href="/post/[slug]" as={`/post/${post.slug}`}>
+              <Link href="/post/[slug]" as={`/post/${post.slug}`} passHref>
               <ObjavaButton >Pročitaj više <ButtonIcon></ButtonIcon></ObjavaButton>
               </Link>
             </Objava>

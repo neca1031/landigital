@@ -37,6 +37,7 @@ export const FormHeading = styled.h3`
  color: #6878D6;
  line-height: 1;
  font-size: 1.75rem;
+ font-family: 'Poppins', sans-serifß;
  font-weight: 700;
  text-align: left;
  margin: 0;
@@ -53,6 +54,7 @@ export const FormInfo = styled.p`
  color: #393a56;
  line-height: 1.6;
  font-size: 1rem;
+ font-family: 'Open Sans', sans-serif;
  text-align: left;
  margin-bottom: 1em;
  @media (max-width: 60em) {
@@ -71,6 +73,7 @@ export const FormButton = styled.button`
  font-size: 0.9375rem;
  letter-spacing: 1px;
  text-align: center;
+ font-family: 'Open Sans', sans-serif;
  text-transform: uppercase;
  text-decoration: none;
  border-radius: 42px;

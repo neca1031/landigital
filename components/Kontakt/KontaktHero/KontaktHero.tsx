@@ -14,14 +14,15 @@ import {
     H2,
     HeroContainer,
   } from "./KontaktHeroStyles";
+  import Link from 'next/link'
 
-const KontaktHero = ( {toggle} ) => {
+const KontaktHero = ( {toggle}:{toggle:any} ) => {
     return (
         <HeroWrapper>
       <Header>
-        <a href="/">
+        <Link href="/">
           <NavLogo src={"/lan-logo1.png"}></NavLogo>
-        </a>
+        </Link>
         <Mobile onClick={toggle}></Mobile>
         <NavItems>
           <NavItem href="/">Početna</NavItem>
@@ -29,9 +30,9 @@ const KontaktHero = ( {toggle} ) => {
           <NavItem href="/about">O nama</NavItem>
           <NavItem href="/usluge">Usluge</NavItem>
           <NavItem href="/kontakt">Kontakt</NavItem>
-          <a href="/forma">
+          <Link href="/forma">
               <NavButton>Pošaljite upit</NavButton>
-            </a>
+            </Link>
         </NavItems>
       </Header>
       <HeroContainer>

@@ -78,6 +78,7 @@ export const EmployeeName = styled.h4`
 color: #242a56;
 font-size: 1.25rem;
 line-height: 1;
+font-family: 'Poppins', sans-serif;
 text-align: center;
 font-weight: 700;
 margin-bottom: 0;

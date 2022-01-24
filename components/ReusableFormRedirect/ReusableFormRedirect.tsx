@@ -1,6 +1,8 @@
 import React from 'react';
 import { ContactForm, FormText, FormHeading, FormInfo, FormButton, ButtonContainer, ContactFormContainer
  } from './ReusableFormRedirectStyles';
+import Link from 'next/link'
+
 
 const ReusableFormRedirect = () => {
     return (
@@ -16,9 +18,11 @@ Na pravom ste mestu!
                 </FormInfo>
                 </FormText>
                 <ButtonContainer>
+                <Link href='/forma'>
                 <FormButton>
                     kontakirajte nas
                 </FormButton>
+                </Link>
                 </ButtonContainer>
             </ContactForm>
             </ContactFormContainer>

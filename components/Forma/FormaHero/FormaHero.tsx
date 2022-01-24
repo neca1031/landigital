@@ -14,17 +14,18 @@ import {
     H2Wrapper,
     H2,
     HeroContainer,
-    Link
+    LinkMail
   } from "./FormaHeroStyles";
+  import Link from 'next/link'
 
-const FormaHero = ({toggle}) => {
+const FormaHero = ({toggle} : {toggle:any}) => {
     return (
         <>
             <HeroWrapper>
       <Header>
-        <a href="/">
+        <Link href="/">
           <NavLogo src={"/lan-logo1.png"}></NavLogo>
-        </a>
+        </Link>
         <Mobile onClick={toggle}></Mobile>
         <NavItems>
           <NavItem href="/">Početna</NavItem>
@@ -32,9 +33,9 @@ const FormaHero = ({toggle}) => {
           <NavItem href="/about">O nama</NavItem>
           <NavItem href="/usluge">Usluge</NavItem>
           <NavItem href="/kontakt">Kontakt</NavItem>
-          <a href="/forma">
+          <Link href="/forma">
               <NavButton>Pošaljite upit</NavButton>
-            </a>
+            </Link>
         </NavItems>
       </Header>
       <HeroContainer>
@@ -44,9 +45,9 @@ const FormaHero = ({toggle}) => {
               <H2>Kontaktirajte nas</H2>
             </H2Wrapper>
             <H4>Ispunite kontakt formu ili nam pišite direktno na <br />
-            <Link href="mailto:info@lan-digital.com">
+            <LinkMail href="mailto:info@lan-digital.com">
             info@lan-digital.com{" "}
-            </Link>
+            </LinkMail>
             </H4>
           </HWrapper>
           <FormaSection />

@@ -64,7 +64,7 @@ export const PWrapper = styled.div`
 export const P = styled.p`
   margin-bottom: 1.6em;
   text-align: center;
-
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 
   line-height: 1.6;
@@ -102,7 +102,7 @@ export const H4 = styled.h4`
   margin: 0;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-
+  font-family: "Poppins", sans-serif;
   @media (max-width: 40em) {
     font-size: 1.125rem;
   }
@@ -172,6 +172,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
+  font-family: sans-serif;
   transition: all 0.2s linear;
   color: #d0d8ea;
   transition: all 0.2s ease-in;

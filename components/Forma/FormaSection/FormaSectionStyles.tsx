@@ -6,7 +6,6 @@ export const FormStyled = styled.form`
   flex-direction: column;
   align-items: center;
   margin-bottom: 10rem;
-
   @media (max-width: 60em) {
     width: 100%;
   }
@@ -15,15 +14,17 @@ export const FormStyled = styled.form`
 export const Input = styled.input`
   width: 100%;
   height: 35px;
-  border: 1px solid #ccc;
-  background-color: #fafafa;
+  background: hsl(0 0% 100% / 0.1);
+ backdrop-filter: blur(0.3rem);
   border-radius: 2px;
   transition: all 0.2s linear;
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 400;
   padding: 0.75rem;
-  color: #666;
+  color: white;
+  border: none;
+  
 `;
 
 export const TextArea = styled.textarea`
@@ -33,11 +34,11 @@ export const TextArea = styled.textarea`
   line-height: 1.6;
   font-weight: 400;
   padding: 0.75rem;
-  color: #666;
-  border: 1px solid #ccc;
-  background-color: #fafafa;
+  color: white;
+  background: hsl(0 0% 100% / 0.1);
+ backdrop-filter: blur(0.3rem);
   border-radius: 2px;
-
+  border: none;
   transition: all 0.2s linear;
 `;
 
@@ -61,7 +62,15 @@ export const FormButton = styled.button`
 export const ErrorMessage = styled.p`
   font-size: 1rem;
   text-align: left;
-  color: grey;
+  color: #d6411c;
 
   margin-bottom: 1rem;
+`;
+
+export const SuccessMessage = styled.p`
+  font-size: 1rem;
+  text-align: left;
+  color: green;
+  font-weight: 400;
+  margin-top: 2rem;
 `;

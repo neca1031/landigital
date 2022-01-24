@@ -177,6 +177,7 @@ export const NavItem = styled.a`
   color: #d0d8ea;
   transition: all 0.2s ease-in;
   font-size: 100%;
+  font-family: sans-serif;
   font-weight: 100;
   &:hover {
     color: white;

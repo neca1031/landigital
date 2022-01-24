@@ -62,7 +62,7 @@ export const Brojka = styled.div`
 `;
 
 export const Broj = styled.p`
-  font-weight: 600;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   line-height: 1;

@@ -19,7 +19,7 @@ async function getPost(slug: string) {
     }
 
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params } : {params: any}) => {
     const post = await getPost(params.slug);
     return {
       props: { post },
@@ -28,7 +28,7 @@ export const getStaticProps = async ({ params }) => {
 
   export const getStaticPaths = () => {
       return {
-          paths: [],
+          paths: [] as string[],
           fallback: true
       }
   }

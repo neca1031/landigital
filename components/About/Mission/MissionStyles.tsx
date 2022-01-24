@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import 'animate.css';
 
 export const MissionContainer = styled.div`
   background-color: rgba(208, 216, 234, 0.25);
@@ -36,6 +37,20 @@ export const TheMission = styled.div`
   justify-content: flex-start;
   align-content: flex-start;
   flex-direction: column;
+  &:nth-child(1) {
+    animation: fadeInUp;
+  animation-duration: 1.3s;
+  }
+  &:nth-child(2) {
+    animation: fadeInUp;
+  animation-duration: 1.3s;
+  animation-delay: 0.1s;
+  }
+  &:nth-child(3) {
+    animation: fadeInUp;
+  animation-duration: 1.3s;
+  animation-delay: 0.2s;
+  }
 `;
 
 export const Span = styled.p`

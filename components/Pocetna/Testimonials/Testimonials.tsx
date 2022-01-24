@@ -7,11 +7,13 @@ import { TestimonialsWrapper,
           TestimonialTitle
 } from './TestimonialsStyles'
 
+
+
 const Testimonials = () => {
     return (
         <TestimonialsWrapper>
             <TestimonialsHeading>
-            "Odličan dizajn i dobra saradnja!"
+            &quot;Odličan dizajn i dobra saradnja!&quot;
             </TestimonialsHeading>
             <Testimonial>
             Iako su momci jako mladi, pre svega su izuzetno ambiciozni i profesionalni.

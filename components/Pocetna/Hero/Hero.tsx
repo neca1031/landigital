@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import {
   NavLogo,
   NavItems,
@@ -18,16 +17,17 @@ import {
   HButton,
   HeroContainer,
 } from "./HeroStyles";
-import { FaBars } from "react-icons/fa";
+import Link from 'next/link'
 
-const Hero = ({ toggle }) => {
+
+const Hero = ({ toggle }: {toggle:any}) => {
   return (
     <>
       <HeroWrapper>
         <Header>
-          <a href="/">
+          <Link href="/">
             <NavLogo src={"/lan-logo1.png"}></NavLogo>
-          </a>
+          </Link>
           <Mobile onClick={toggle}></Mobile>
           <NavItems>
             <NavItem href="/">Početna</NavItem>
@@ -35,9 +35,9 @@ const Hero = ({ toggle }) => {
             <NavItem href="/about">O nama</NavItem>
             <NavItem href="/usluge">Usluge</NavItem>
             <NavItem href="/kontakt">Kontakt</NavItem>
-            <a href="/forma">
+            <Link href="/forma">
               <NavButton>Pošaljite upit</NavButton>
-            </a>
+            </Link>
           </NavItems>
         </Header>
         <HeroContainer>
@@ -54,7 +54,9 @@ const Hero = ({ toggle }) => {
                   Prepustite sav težak rad nama i uživajte u svom novom sajtu.
                 </P>
               </PWrapper>
+              <Link href='forma'>
               <HButton>Kontaktirajte nas</HButton>
+              </Link>
             </HWrapper>
           </HeroContent>
         </HeroContainer>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import 'animate.css';
 import { FaBars } from "react-icons/fa";
 
 export const HeroWrapper = styled.div`
@@ -21,7 +21,7 @@ export const HeroContent = styled.div`
   width: 35%;
   position: relative;
   display: flex;
-
+  
   @media (max-width: 72em) {
     width: 45%;
   }
@@ -30,6 +30,7 @@ export const HeroContent = styled.div`
     justify-content: center;
     display: flex;
     width: 100%;
+    
   }
 `;
 
@@ -39,6 +40,7 @@ export const HeroContainer = styled.div`
   margin-right: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  
 `;
 
 export const HWrapper = styled.div`
@@ -63,6 +65,8 @@ export const H2Wrapper = styled.div`
   margin-bottom: 1.25em;
   width: 100%;
   position: relative;
+  animation: fadeInUp;
+  animation-duration: 1.2s;
 `;
 
 export const PWrapper = styled.div`
@@ -71,6 +75,8 @@ export const PWrapper = styled.div`
   width: 100%;
   color: #d0d8ea;
   position: relative;
+  animation: fadeInUp;
+  animation-duration: 1.2s;
   word-wrap: break-word;
 `;
 
@@ -78,6 +84,7 @@ export const P = styled.p`
   margin-bottom: 1.6em;
   text-align: left;
   width: 100%;
+  font-family: 'Open Sans',sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.6;
@@ -96,6 +103,7 @@ export const H2 = styled.h1`
   font-family: "Poppins", sans-serif;
   margin: 0;
   font-size: 3rem;
+  line-height: 1.2;
   @media (max-width: 60em) {
     text-align: center;
   }
@@ -108,6 +116,7 @@ export const H4 = styled.h4`
   color: #d0d8ea;
   line-height: 1;
   margin: 0;
+  font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1rem;
 `;
@@ -196,6 +205,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
   transition: all 0.2s linear;
   color: #d0d8ea;
   transition: all 0.2s ease-in;

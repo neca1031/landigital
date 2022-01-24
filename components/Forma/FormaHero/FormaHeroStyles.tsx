@@ -8,7 +8,7 @@ export const HeroWrapper = styled.div`
       rgba(36, 42, 86, 0.8),
       rgba(36, 42, 86, 0.8)
     ),
-    url("/lan-5.jpeg");
+    url("/IMG_7365.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20,6 +20,7 @@ export const HeroContent = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 `;
 
 export const HeroContainer = styled.div`
@@ -28,6 +29,8 @@ export const HeroContainer = styled.div`
   margin-right: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  margin-top: 2rem;
+  
 `;
 
 export const HWrapper = styled.div`
@@ -78,7 +81,7 @@ export const P = styled.p`
   }
 `;
 
-export const Link = styled.a`
+export const LinkMail = styled.a`
   text-decoration: none;
   color: #6878d6;
   transition: all 0.2s linear;
@@ -185,6 +188,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
+  font-family: sans-serif;
   transition: all 0.2s linear;
   color: #d0d8ea;
   transition: all 0.2s ease-in;

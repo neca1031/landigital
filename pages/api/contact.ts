@@ -1,32 +1,34 @@
-import nodemailer from 'nodemailer';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 
 
-export default async (req, res) => {
+const nodemailer = require('nodemailer');
+
+export default async (req: NextApiRequest, res: NextApiResponse) => {
     const {ime,email,poruka} = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'mail.lan-digital.com',
         port: 465,
         secure: true,
         auth: {
-            user: process.env.user,
-            pass: process.env.pass,
+            user: 'info@lan-digital.com',
+            pass: 'mismodrugari1031',
         }
     })
 
     try {
-        const email = await transporter.sendMail({
+        const emailMessage = await transporter.sendMail({
             from: email,
-            to: 'nemanjag3005@gmail.com',
+            to: 'info@lan-digital.com',
             subject: `Nova poruka od ${ime}`,
             html: `<p>Imate novu poruku</p><br>
-            <p><strong> Ime: </strong> ${ime} </p> <br>
+            <p><strong> Ime Klijenta: </strong> ${ime} </p> <br>
             <p><strong> Poruka: </strong> ${poruka} </p> <br>`
         });
-        console.log('Poruka poslata', emailRes.messageId);
-    } catch (err) {
-        console.log(err);
+        console.log('Poruka poslata', emailMessage.messageId);
+    } catch (error) {
+        console.log(error);
     }
     
     res.status(200).json(req.body);

@@ -1,17 +1,20 @@
 {
   "name": "landigital",
+  "homepage": "https://lan-digital.com/",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "animate.css": "^4.1.1",
     "axios": "^0.24.0",
     "formik": "^2.2.9",
     "handlebars": "^4.7.7",

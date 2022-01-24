@@ -19,10 +19,12 @@ export const FooterContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-export const FooterLogo = styled.div`
+export const FooterLogo = styled.img`
   margin-right: auto;
-  width: 10rem;
-  height: 10rem;
+  max-width: 10em;
+  height: auto;
+  aspect-ratio: 1080/1080;
+  
 `;
 export const Contact = styled.p`
   padding-left: 1.5rem;

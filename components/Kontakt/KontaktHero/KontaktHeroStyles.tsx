@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import 'animate.css'
 import { FaBars } from "react-icons/fa";
 
 export const HeroWrapper = styled.div`
@@ -28,6 +28,8 @@ export const HeroContainer = styled.div`
   margin-right: auto;
   padding-right: 2rem;
   padding-left: 2rem;
+  animation: fadeInUp;
+  animation-duration: 1.3s;
 `;
 
 export const HWrapper = styled.div`
@@ -97,18 +99,20 @@ export const H2 = styled.h1`
 
 export const H4 = styled.h4`
   text-align: center;
-  color: #fff;
+  color: #d0d8ea;
   line-height: 1;
   font-weight: 700;
+  font-family: 'Poppins',sans-serif;
   margin: 0;
   font-size: 1.25rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 
   @media (max-width: 40em) {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
   }
   @media (max-width: 20em) {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 `;
 
@@ -171,6 +175,7 @@ export const NavItem = styled.a`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  font-family: sans-serif;
   padding: 1rem 1em;
   display: inline-block;
   transition: all 0.2s linear;

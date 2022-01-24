@@ -39,6 +39,7 @@ export const FormHeading = styled.h3`
  color: #6878D6;
  line-height: 1;
  font-size: 1.75rem;
+ font-family: 'Poppins',sans-serif;
  font-weight: 700;
  text-align: left;
  margin: 0;
@@ -53,6 +54,7 @@ export const FormInfo = styled.p`
  margin-bottom: 0;
  margin-top: 0;
  color: #393a56;
+ font-family: sans-serif;
  line-height: 1.6;
  font-size: 1rem;
  text-align: left;

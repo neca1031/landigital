@@ -19,12 +19,16 @@ export const KontaktWrap = styled.div`
   margin-left: 7.5rem;
   margin-right: 7.5rem;
   flex-wrap: wrap;
+  @media (max-width: 40em) {
+    margin: 0 1rem;
+  }
 `;
 
 export const ContactFormContainer = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
+  
 `;
 
 export const ContactForm = styled.div`
@@ -53,6 +57,7 @@ export const FormText = styled.div`
 export const FormHeading = styled.h3`
   color: #6878d6;
   line-height: 1;
+  font-family: 'Poppins',sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   text-align: left;
@@ -68,6 +73,7 @@ export const FormInfo = styled.p`
   margin-top: 0;
   color: #393a56;
   line-height: 1.6;
+  font-family: sans-serif;
   font-size: 1rem;
   text-align: left;
   margin-bottom: 2em;
@@ -106,7 +112,7 @@ export const StupiteKontaktWrap = styled.div`
   margin-left: 6.25rem;
   display: flex;
   flex-direction: column;
-
+  
   @media (max-width: 60em) {
     margin-left: auto;
     margin-right: auto;

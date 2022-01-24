@@ -4,9 +4,10 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -15,6 +16,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/_app.js", "pages/_document.js", "components/Sidebar/SidebarStyles.js", "components/Sidebar/Sidebar.js", "components/Forma/FormaSection/FormaSection.js", "components/About/AccordionSection/AccordionSectionStyles.js", "components/About/AccordionSection/AccordionSection.js"],
   "exclude": ["node_modules"]
 }

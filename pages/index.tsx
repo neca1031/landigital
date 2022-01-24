@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import React, { useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Pocetna/Hero/Hero";
@@ -10,18 +11,28 @@ import Testimonials from "../components/Pocetna/Testimonials/Testimonials";
 import UslugeHero from "../components/Pocetna/UslugeHero/UslugeHero";
 import ReusableFormRedirect from "../components/ReusableFormRedirect/ReusableFormRedirect";
 
-
-
-
 const Home: NextPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <>
+      <Head>
+        <title>Lan Digital - The Cool Digital Agency</title>
+        <meta
+          name="description"
+          content="LAN Digital je tu da Vašem biznisu pruži digitalni temelj na kom može da raste."
+        />
+        <link rel="icon" href="/favicon.ico" />
+        
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+      </Head>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero toggle={toggle} />
       <UslugeHero />

@@ -10,7 +10,6 @@ import {
   SocialIconLink,
   SocialsSection,
 } from "./FooterStyles";
-import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -18,14 +17,7 @@ const Footer = () => {
     <FooterWrapper>
       <FooterContainer>
         <ContactSection>
-          <FooterLogo>
-            <Image
-              src="/lan-logo1.png"
-              width="180px"
-              height="180px"
-              layout="responsive"
-            />
-          </FooterLogo>
+          <FooterLogo src={"/lan-logo1.png"}></FooterLogo>
           <Contact>
             Imate ideju i treba Vam pomoć? <br />
             Kontaktirajte nas <br />
@@ -35,16 +27,32 @@ const Footer = () => {
           </Contact>
         </ContactSection>
         <SocialsSection>
-          <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+          <SocialIconLink
+            href="https://www.instagram.com/lan_digital_/"
+            target="_blank"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+          <SocialIconLink
+            href="https://twitter.com/Lan_Digital_"
+            target="_blank"
+            aria-label="Twitter"
+          >
             <FaTwitter />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+          <SocialIconLink
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <FaLinkedin />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+          <SocialIconLink
+            href="https://www.facebook.com/profile.php?id=100071752245661"
+            target="_blank"
+            aria-label="Facebook"
+          >
             <FaFacebook />
           </SocialIconLink>
         </SocialsSection>

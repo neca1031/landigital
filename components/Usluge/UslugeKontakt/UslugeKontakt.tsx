@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContactForm, FormText, FormHeading, FormInfo, FormButton, ButtonContainer, ContactFormContainer
 } from './UslugeKontaktStyles';
+import Link from 'next/link'
 
 const UslugeKontakt = () => {
     return (
@@ -16,9 +17,11 @@ Na pravom ste mestu!
                 </FormInfo>
                 </FormText>
                 <ButtonContainer>
+                    <Link href='/forma'>
                 <FormButton>
                     kontakirajte nas
                 </FormButton>
+                </Link>
                 </ButtonContainer>
             </ContactForm>
             </ContactFormContainer>

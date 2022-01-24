@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
-import AboutHero from "../components/About/AboutHero/AboutHero";
 import BlogSection from "../components/Blog/BlogSection/BlogSection";
 import BlogHero from "../components/Blog/BlogHero/BlogHero";
-import { timeStamp } from "console";
 
-const {BLOG_URL, CONTENT_API_KEY} = process.env 
+const { BLOG_URL, CONTENT_API_KEY } = process.env;
 
 type Post = {
   title: string;
@@ -25,7 +24,7 @@ async function getPosts() {
   return posts;
 }
 
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params } : {params:any}) => {
   const posts = await getPosts();
   return {
     props: { posts },
@@ -41,6 +40,18 @@ const Blog: NextPage<{ posts: Post[] }> = (props) => {
   const { posts } = props;
   return (
     <>
+      <Head>
+        <title>Lan Digital | Blog</title>
+        <meta
+          name="description"
+          content="LAN Digital je tu da Vašem biznisu pruži digitalni temelj na kom može da raste."
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+      </Head>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <BlogHero toggle={toggle} />
       <BlogSection posts={posts} />
@@ -51,4 +62,3 @@ const Blog: NextPage<{ posts: Post[] }> = (props) => {
 };
 
 export default Blog;
-

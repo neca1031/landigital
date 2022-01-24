@@ -72,6 +72,7 @@ export const KorakInfo = styled.p`
   margin-bottom: 1.6em;
   line-height: 1.6;
   color: #393a56;
+  font-family: sans-serif;
   @media (max-width: 40em) {
     font-size: 0.92rem;
   }

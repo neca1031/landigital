@@ -38,6 +38,7 @@ export const Testimonial = styled.p`
  padding-right: 2rem;
  text-align: center;
  font-size: 1.15rem;
+ font-family: 'Open Sans', sans-serif;
  line-height: 1.6;
  color: #393a56;
  max-width: 750px;
@@ -59,7 +60,7 @@ export const TestimonialIcon = styled.img`
 
 export const TestimonialName = styled.p`
 line-height: 1.5;
-font-weight: bold;
+font-weight: 400;
 text-align: center;
 color: #393a56;
 font-size: 1rem;
@@ -70,6 +71,7 @@ margin-bottom: 0;
 export const TestimonialTitle = styled.p`
  text-transform: uppercase;
  line-height: 2em;
+ font-family: 'Open Sans', sans-serif;
  color: #566892;
  font-size: 13px;
  margin-top: 0;
