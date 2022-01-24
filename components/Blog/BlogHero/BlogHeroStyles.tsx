@@ -9,7 +9,7 @@ export const HeroWrapper = styled.div`
       rgba(36, 42, 86, 0.8),
       rgba(36, 42, 86, 0.8)
     ),
-    url("/IMG_7358.jpg");
+    url("/IMG_7358.JPG");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
