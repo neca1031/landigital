@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-
+const { USER, PASS } = process.env;
 
 const nodemailer = require('nodemailer');
 
@@ -12,8 +12,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         port: 465,
         secure: true,
         auth: {
-            user: 'info@lan-digital.com',
-            pass: 'mismodrugari1031',
+            user: `${USER}`,
+            pass: `${PASS}`,
         }
     })
 
