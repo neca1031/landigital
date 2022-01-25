@@ -8,19 +8,19 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const {ime,email,poruka} = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: 'mail.lan-digital.com',
+        host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
-            user: `${USER}`,
-            pass: `${PASS}`,
+            user: 'info.landigital@gmail.com',
+            pass: 'qrkfizyjehdewzjv',
         }
     })
 
     try {
         const emailMessage = await transporter.sendMail({
             from: email,
-            to: 'info@lan-digital.com',
+            to: 'info.landigital@gmail.com',
             subject: `Nova poruka od ${ime}`,
             html: `<p>Imate novu poruku</p><br>
             <p><strong> Ime Klijenta: </strong> ${ime} </p> <br>
