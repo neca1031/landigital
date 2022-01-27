@@ -47,6 +47,7 @@ margin-left: auto;
 width: 100%auto;
 margin-bottom: 2rem;
 padding: 0 2rem;
+overflow: hidden;
 `;
 
 export const Klijent = styled.img`
