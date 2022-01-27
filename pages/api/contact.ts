@@ -13,8 +13,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         port: 465,
         secure: true,
         auth: {
-            user: process.env.USER,
-            pass: process.env.PASS,
+            user: 'info@lan-digital.com',
+            pass: 'mismodrugari1031',
             
         },
     })
