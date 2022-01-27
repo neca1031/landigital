@@ -173,14 +173,28 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
+  position: relative;
   font-family: sans-serif;
-  transition: all 0.2s linear;
   color: #d0d8ea;
   transition: all 0.2s ease-in;
   font-size: 100%;
+  margin-right: 1rem;
   font-weight: 100;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    left: 0;
+    width: 0;
+    bottom: -0.1em;
+    transition: 0.3s;
+  }
   &:hover {
     color: white;
+  }
+  &:hover:after {
+    width: 100%;
   }
   @media (max-width: 898px) {
     padding: 2.2rem;

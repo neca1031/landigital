@@ -19,6 +19,20 @@ export const SidebarContainer = styled.aside`
  
 `
 
+export const NavLogo = styled.img`
+  margin-right: auto;
+  max-width: 70px;
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  height: auto;
+  /* aspect-ratio: 1080/1080; */
+  cursor: pointer;
+  /* @media (max-width: 60em) {
+    max-width: 120px;
+  } */
+`;
+
 export const CloseIcon = styled(VscClose)`
  color: #fff;
 `

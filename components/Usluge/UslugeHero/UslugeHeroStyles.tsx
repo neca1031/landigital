@@ -177,15 +177,29 @@ export const NavItem = styled.a`
   text-align: center;
   text-decoration: none;
   padding: 1rem 1em;
-  font-family: sans-serif;
   display: inline-block;
-  transition: all 0.2s linear;
+  position: relative;
+  font-family: sans-serif;
   color: #d0d8ea;
   transition: all 0.2s ease-in;
   font-size: 100%;
+  margin-right: 1rem;
   font-weight: 100;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    left: 0;
+    width: 0;
+    bottom: -0.1em;
+    transition: 0.3s;
+  }
   &:hover {
     color: white;
+  }
+  &:hover:after {
+    width: 100%;
   }
   @media (max-width: 898px) {
     padding: 2.2rem;
