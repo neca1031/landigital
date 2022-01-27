@@ -12,7 +12,7 @@ import axios from "axios";
 
 const FormaSection = () => {
   const [success,setSuccess] = useState(false);
-  const { register, handleSubmit, formState: {errors} } = useForm();
+  const { register, handleSubmit, formState: {errors}, reset } = useForm();
   async function onSubmitForm(values) {
     let config = {
       method: "post",
@@ -26,6 +26,7 @@ const FormaSection = () => {
       const response = await axios(config);
       if (response.status === 200) {
         setSuccess(true);
+        reset();
       }
     } catch (err) {
       console.error(err);

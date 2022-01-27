@@ -26,6 +26,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             subject: `Nova poruka od ${ime}`,
             html: `<p>Imate novu poruku</p><br>
             <p><strong> Ime Klijenta: </strong> ${ime} </p> <br>
+            <p><strong> Email Adresa: </strong> ${email} </p> <br>
             <p><strong> Poruka: </strong> ${poruka} </p> <br>`
         });
         console.log('Poruka poslata', emailMessage.messageId);
