@@ -10,23 +10,19 @@ export const BlogSectionContainer = styled.div`
 `;
 
 export const ObjaveHeading = styled.h2`
- color: #242a56;
- line-height: 1;
- font-size: 2.625rem;
- font-family: 'Poppins',sans-serif;
- font-weight: 700;
- padding: 3rem 0;
- text-align: center;
+  color: #242a56;
+  line-height: 1;
+  font-size: 2.625rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 3rem 0;
+  text-align: center;
 
- @media (max-width: 40em) {
-      
-      font-size: 2rem;
-      
+  @media (max-width: 40em) {
+    font-size: 2rem;
   }
   @media (max-width: 20em) {
-      
-      font-size: 1.6rem;
-      
+    font-size: 1.6rem;
   }
 `;
 
@@ -38,7 +34,7 @@ export const ObjaveContainer = styled.div`
   margin-left: 7rem;
   margin-right: 7rem;
   flex-wrap: wrap;
-  
+
   max-width: 1500px;
 
   @media (max-width: 60em) {
@@ -50,13 +46,13 @@ export const ObjaveContainer = styled.div`
 
 export const Objava = styled.div`
   background-color: #fff;
-  
+
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
   padding: 2em 2.5em;
-  
+
   box-shadow: 0px 10px 30px 0px rgba(208, 216, 234, 0.3);
   @media (max-width: 60em) {
     padding: 1.5em 2em;
@@ -76,7 +72,6 @@ export const ObjavaHeading = styled.h4`
   cursor: pointer;
   &:hover {
     text-decoration: underline;
-    
   }
 `;
 
@@ -89,7 +84,7 @@ export const ObjavaP = styled.p`
 `;
 
 export const ObjavaButton = styled.button`
-margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
   margin-top: auto;
   border-radius: 42px;
@@ -109,26 +104,24 @@ margin-right: auto;
   cursor: pointer;
   &:hover {
     background-color: #0274be;
-    
   }
-`
+`;
 
 export const Slika = styled.img`
- width: 100%;
- border-radius: .5em;
- max-height: 400px;
-`
+  width: 100%;
+  border-radius: 0.5em;
+  max-height: 400px;
+`;
 export const ObjavaVreme = styled.p`
-line-height: 1;
+  line-height: 1;
   color: grey;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
-`
+`;
 
 export const ButtonIcon = styled(FaArrowRight)`
-  
   font-size: 0.9rem;
   font-weight: 200;
 `;

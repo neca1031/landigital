@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import 'animate.css';
+import "animate.css";
 import { FaBars } from "react-icons/fa";
 
 export const HeroWrapper = styled.div`
@@ -20,7 +20,7 @@ export const HeroContent = styled.div`
   width: 35%;
   position: relative;
   display: flex;
-  
+
   @media (max-width: 72em) {
     width: 45%;
   }
@@ -29,7 +29,6 @@ export const HeroContent = styled.div`
     justify-content: center;
     display: flex;
     width: 100%;
-    
   }
 `;
 
@@ -39,7 +38,6 @@ export const HeroContainer = styled.div`
   margin-right: auto;
   padding-right: 2rem;
   padding-left: 2rem;
-  
 `;
 
 export const HWrapper = styled.div`
@@ -83,7 +81,7 @@ export const P = styled.p`
   margin-bottom: 1.6em;
   text-align: left;
   width: 100%;
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.6;
@@ -162,6 +160,7 @@ export const NavLogo = styled.img`
   margin-right: auto;
   max-width: 180px;
   height: auto;
+  cursor: pointer;
   aspect-ratio: 1080/1080;
   @media (max-width: 60em) {
     max-width: 120px;
@@ -179,7 +178,7 @@ export const NavItems = styled.div`
 
 export const Mobile = styled(FaBars)`
   z-index: 20;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -187,7 +186,7 @@ export const Mobile = styled(FaBars)`
   display: none;
   color: #fff;
   background: #6878d6;
-  border-radius: 6px;
+  border-radius: 2px;
 
   padding: 0.5rem;
 
@@ -204,7 +203,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: all 0.2s linear;
   color: #d0d8ea;
   transition: all 0.2s ease-in;

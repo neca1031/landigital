@@ -36,6 +36,7 @@ const BlogSection = ({ posts } : {posts:any}) => {
             
           );
         })}
+        <ObjavaP>Coming Soon&trade;...</ObjavaP>
       </ObjaveContainer>
     </BlogSectionContainer>
   );

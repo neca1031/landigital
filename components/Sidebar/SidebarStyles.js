@@ -1,5 +1,6 @@
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
+import { VscClose } from 'react-icons/vsc';
 
 
 export const SidebarContainer = styled.aside`
@@ -7,25 +8,24 @@ export const SidebarContainer = styled.aside`
  z-index: 999;
  width: 100%;
  height: 100%;
- background: hsl(0 0% 100% / 0.1);
- backdrop-filter: blur(1.5rem);
+ background-color: #242a56;
  display: grid;
  align-items: center;
  top: 0;
- left: 0;
+ right: 0;
  transition: 0.3s ease-in-out;
  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
- top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+ right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
  
 `
 
-export const CloseIcon = styled(FaTimes)`
- color: #fff
+export const CloseIcon = styled(VscClose)`
+ color: #fff;
 `
 
 export const Icon = styled.div`
  position: absolute;
- top: 1.2rem;
+ top: 3rem;
  right: 1.5rem;
  background: transparent;
  font-size: 2rem;
@@ -35,6 +35,7 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
  color: #fff;
+ padding: 1rem;
 `
 
 export const SidebarItem = styled.a`
@@ -50,7 +51,9 @@ transition: all .2s linear;
  color: #d0d8ea;
  transition: all 0.2s ease-in;
  font-size: 1.5rem;
-
+@media (max-width: 20em) {
+    font-size: 1.3rem;
+}
  font-weight: 100;
  &:hover {
     color: white;
@@ -74,6 +77,9 @@ border-color: #6878d6;
 border: none;
 color: white;
 font-size: 1.2rem;
+@media (max-width: 20em) {
+    font-size: 1rem;
+}
 line-height: 1;
 text-transform: uppercase;
 letter-spacing: 1px;

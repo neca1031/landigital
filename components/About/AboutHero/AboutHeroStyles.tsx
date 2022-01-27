@@ -129,6 +129,7 @@ export const Header = styled.div`
 export const NavLogo = styled.img`
   margin-right: auto;
   max-width: 180px;
+  cursor: pointer;
   height: auto;
   aspect-ratio: 1080/1080;
   @media (max-width: 60em) {

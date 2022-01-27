@@ -15,7 +15,7 @@ export const Input = styled.input`
   width: 100%;
   height: 35px;
   background: hsl(0 0% 100% / 0.1);
- backdrop-filter: blur(0.3rem);
+  backdrop-filter: blur(0.3rem);
   border-radius: 2px;
   transition: all 0.2s linear;
   font-size: 1rem;
@@ -24,7 +24,6 @@ export const Input = styled.input`
   padding: 0.75rem;
   color: white;
   border: none;
-  
 `;
 
 export const TextArea = styled.textarea`
@@ -36,7 +35,7 @@ export const TextArea = styled.textarea`
   padding: 0.75rem;
   color: white;
   background: hsl(0 0% 100% / 0.1);
- backdrop-filter: blur(0.3rem);
+  backdrop-filter: blur(0.3rem);
   border-radius: 2px;
   border: none;
   transition: all 0.2s linear;
@@ -53,7 +52,9 @@ export const FormButton = styled.button`
   letter-spacing: 1px;
   cursor: pointer;
   border-radius: 6px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &:hover {
     background-color: #0274be;
   }

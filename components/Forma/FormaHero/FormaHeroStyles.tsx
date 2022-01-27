@@ -146,6 +146,7 @@ export const NavLogo = styled.img`
   margin-right: auto;
   max-width: 180px;
   height: auto;
+  cursor: pointer;
   aspect-ratio: 1080/1080;
   @media (max-width: 60em) {
     max-width: 120px;

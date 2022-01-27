@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   Input,
   TextArea,
@@ -9,10 +9,18 @@ import {
 } from "./FormaSectionStyles";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { Oval } from "react-loader-spinner";
 
 const FormaSection = () => {
-  const [success,setSuccess] = useState(false);
-  const { register, handleSubmit, formState: {errors}, reset } = useForm();
+  const [success, setSuccess] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    formState,
+  } = useForm();
+  const { isSubmitting } = formState;
   async function onSubmitForm(values) {
     let config = {
       method: "post",
@@ -51,8 +59,7 @@ const FormaSection = () => {
         />
         <ErrorMessage>{errors?.ime?.message}</ErrorMessage>
 
-        <Input 
-          
+        <Input
           type="email"
           placeholder="Email"
           {...register("email", {
@@ -75,7 +82,10 @@ const FormaSection = () => {
               value: true,
               message: "Ovo polje je obavezno.",
             },
-            minLength: { value: 5, message: "Prekratka poruka. (Manje od 5 karaktera.)" },
+            minLength: {
+              value: 5,
+              message: "Prekratka poruka. (Manje od 5 karaktera.)",
+            },
             maxLength: {
               value: 5000,
               message: "Predugačka poruka, mora imati manje od 5000 karaktera.",
@@ -83,8 +93,15 @@ const FormaSection = () => {
           })}
         />
         <ErrorMessage>{errors?.poruka?.message}</ErrorMessage>
-        <FormButton type="submit">POŠALJI UPIT</FormButton>
-        {success && (<SuccessMessage>Uspešno ste poslali upit!</SuccessMessage>)}
+        <FormButton type="submit" disabled={isSubmitting}>
+          {" "}
+          {isSubmitting ? (
+            <Oval color="white" height={20} width={20} />
+          ) : (
+            <>POŠALJI UPIT</>
+          )}{" "}
+        </FormButton>
+        {success && <SuccessMessage>Uspešno ste poslali upit!</SuccessMessage>}
       </FormStyled>
     </>
   );
