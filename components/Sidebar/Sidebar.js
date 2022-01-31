@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Sidebar = ({isOpen, toggle}) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <NavLogo src={"/lan-logo1.png"}>
+            <NavLogo src={"/logo2.png"}>
 
             </NavLogo>
             <Icon onClick = {toggle}>
