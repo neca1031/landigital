@@ -18,7 +18,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const Blog: NextPage = ( {posts} ) => {
+const Blog: NextPage = ( {posts} : any ) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
