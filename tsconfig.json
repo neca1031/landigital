@@ -16,6 +16,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/_app.js", "pages/_document.js", "components/Sidebar/SidebarStyles.js", "components/Sidebar/Sidebar.js", "components/Forma/FormaSection/FormaSection.js", "components/About/AccordionSection/AccordionSectionStyles.js", "components/About/AccordionSection/AccordionSection.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/_app.js", "pages/_document.js", "components/Sidebar/SidebarStyles.js", "components/Sidebar/Sidebar.js", "components/Forma/FormaSection/FormaSection.js", "components/About/AccordionSection/AccordionSectionStyles.js", "components/About/AccordionSection/AccordionSection.js", "pages/blog.js"],
   "exclude": ["node_modules"]
 }

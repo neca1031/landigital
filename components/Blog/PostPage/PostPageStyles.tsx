@@ -16,6 +16,40 @@ export const HeroWrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
+export const AuthorImage = styled.img`
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+`;
+
+export const AuthorName = styled.h3`
+  color: #242a56;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+`;
+
+export const AuthorBio = styled.p`
+  color: grey;
+  line-height: 1;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+`;
+
+export const AuthorImageContainer = styled.div`
+  position: absolute;
+  top: -3.5rem;
+  
+`;
+
 export const HeroContent = styled.div`
   position: relative;
   display: flex;
@@ -173,14 +207,28 @@ export const NavItem = styled.a`
   text-decoration: none;
   padding: 1rem 1em;
   display: inline-block;
-  transition: all 0.2s linear;
+  position: relative;
+  font-family: sans-serif;
   color: #d0d8ea;
   transition: all 0.2s ease-in;
   font-size: 100%;
-  font-family: sans-serif;
+  margin-right: 1rem;
   font-weight: 100;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    left: 0;
+    width: 0;
+    bottom: -0.1em;
+    transition: 0.3s;
+  }
   &:hover {
     color: white;
+  }
+  &:hover:after {
+    width: 100%;
   }
   @media (max-width: 898px) {
     padding: 2.2rem;
@@ -219,6 +267,7 @@ export const PostContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 export const ThePost = styled.div`
@@ -235,12 +284,8 @@ export const ThePost = styled.div`
   align-content: flex-start;
   flex-direction: column;
   margin-bottom: 5rem;
-  
-  
 
-  
   @media (max-width: 50em) {
-    
     margin-top: -3rem;
     margin-right: 2.2rem;
     margin-left: 2.2rem;
@@ -248,10 +293,35 @@ export const ThePost = styled.div`
   @media (max-width: 40em) {
     margin-right: 1rem;
     margin-left: 1rem;
-    }
+  }
 `;
 
+export const AuthorContainer = styled.div`
+  max-width: 600px;
+  border-radius: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0px 0px 40px 0px rgba(36, 42, 86, 0.15);
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 5rem;
 
+  @media (max-width: 50em) {
+    margin-top: -3rem;
+    margin-right: 2.2rem;
+    margin-left: 2.2rem;
+  }
+  @media (max-width: 40em) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+`;
 
 export const Span = styled.p`
   border-top-color: rgb(104, 120, 214);
@@ -279,6 +349,37 @@ export const PostHeading = styled.h3`
   }
 `;
 
+export const Heading3 = styled.h3`
+  line-height: 1;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+`;
+
+export const Heading4 = styled.h4`
+  line-height: 1;
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-align: center;
+`;
+
+export const Paragraph = styled.p`
+  margin-bottom: 2rem;
+`;
+
+export const PostImage = styled.img`
+  width: 100%;
+  border-radius: 0.5em;
+  max-height: 35rem;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+`;
+
 export const PostContent = styled.div`
   margin-bottom: 1.6em;
   font-size: 1rem;
@@ -293,61 +394,60 @@ export const PostContent = styled.div`
 `;
 
 export const BackButton = styled.button`
-text-decoration: none;
-font-size: 0.8rem;
+  text-decoration: none;
+  font-size: 0.8rem;
 
-border-radius: 10px;
-background: #6878d6;
-font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  background: #6878d6;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   color: white;
-padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   transition: all 0.2s linear;
   cursor: pointer;
-width: 7rem;
-border: none;
-&:hover {
+  width: 7rem;
+  border: none;
+  &:hover {
     background: #0274be;
-    
   }
   @media (max-width: 40em) {
     margin-right: auto;
     margin-top: 0;
-    }
-`
+  }
+`;
 
 export const ButtonIcon = styled(FaArrowLeft)`
-  margin-right: .5rem;
-  
+  margin-right: 0.5rem;
+
   font-size: 0.6rem;
   font-weight: 200;
 `;
 
 export const Stack = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: 1rem;
-@media (max-width: 40em) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  @media (max-width: 40em) {
     flex-direction: column;
-    }
-`
+  }
+`;
 
 export const Datum = styled.p`
-line-height: 1;
+  line-height: 1.3;
   color: grey;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
   @media (max-width: 40em) {
-      font-size: 0.8rem;
-      margin-bottom: .5rem;
-    }
-`
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+`;
 
 export const VremeCitanja = styled.p`
-line-height: 1;
+  line-height: 1;
   color: grey;
   font-size: 0.6rem;
   font-family: "Poppins", sans-serif;
@@ -355,13 +455,13 @@ line-height: 1;
   margin-bottom: 1rem;
   text-transform: uppercase;
   @media (max-width: 40em) {
-      font-size: 0.6rem;
-      margin-top: 2rem;
-    }
-`
+    font-size: 0.6rem;
+    margin-top: 2rem;
+  }
+`;
 
 export const Autor = styled.p`
-line-height: 1;
+  line-height: 1;
   color: grey;
   font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
@@ -370,4 +470,4 @@ line-height: 1;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3rem;
-`
+`;

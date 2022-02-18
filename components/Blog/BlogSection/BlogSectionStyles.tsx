@@ -37,7 +37,7 @@ export const ObjaveContainer = styled.div`
 
   max-width: 1500px;
 
-  @media (max-width: 60em) {
+  @media (max-width: 65em) {
     grid-template-columns: 1fr;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -59,6 +59,21 @@ export const Objava = styled.div`
   }
 `;
 
+export const HorizontalStack = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+`;
+
+export const AuthorWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 2rem;
+`;
+
 export const ObjavaHeading = styled.h4`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
   color: #242a56;
@@ -68,7 +83,7 @@ export const ObjavaHeading = styled.h4`
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
@@ -81,6 +96,16 @@ export const ObjavaP = styled.p`
   line-height: 1.6;
   text-align: left;
   font-family: "Open Sans", sans-serif;
+`;
+
+export const AuthorName = styled.p`
+  margin-top: 0.4rem;
+  color: gray;
+  line-height: 1.6;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  display: inline;
+  vertical-align: middle;
 `;
 
 export const ObjavaButton = styled.button`
@@ -97,28 +122,39 @@ export const ObjavaButton = styled.button`
   color: white;
   font-size: 0.9rem;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: 1px;
   padding: 0.7rem 1.4rem;
-  transition: all 0.2s linear;
+  transition: all 0.2s ease;
   cursor: pointer;
   &:hover {
     background-color: #0274be;
+    transform: translateY(-0.25rem);
   }
 `;
 
 export const Slika = styled.img`
   width: 100%;
   border-radius: 0.5em;
-  max-height: 400px;
+  max-height: 20rem;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 `;
+
+export const AuthorSlika = styled.img`
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+`;
+
 export const ObjavaVreme = styled.p`
-  line-height: 1;
+  line-height: 1.6;
   color: grey;
   font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
+  display: inline;
 `;
 
 export const ButtonIcon = styled(FaArrowRight)`

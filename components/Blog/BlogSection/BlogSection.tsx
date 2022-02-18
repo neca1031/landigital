@@ -10,33 +10,49 @@ import {
   ObjaveHeading,
   Slika,
   ObjavaVreme,
-  ButtonIcon,
+  HorizontalStack,
+  AuthorSlika,
+  AuthorName,
+  AuthorWrap
 } from "./BlogSectionStyles";
-import moment from 'moment';
-const BlogSection = ({ posts } : {posts:any}) => {
-    
+import moment from "moment";
+import FeaturedPosts from "./FeaturedPosts";
+const BlogSection = ({ posts }: { posts: any }) => {
   return (
     <BlogSectionContainer>
+      <FeaturedPosts />
       <ObjaveHeading>Poslednje Objave</ObjaveHeading>
       <ObjaveContainer>
-        {posts.map((post:any) => {
+        {posts.map((post: any) => {
           return (
-            <Objava key={post.slug}>
-              <Slika src={post.feature_image}></Slika>
-              <Link href="/post/[slug]" as={`/post/${post.slug}`}>
-                <ObjavaHeading>{post.title}</ObjavaHeading>
+            <Objava key={post.node.title}>
+              <Slika src={post.node.featuredImage.url}></Slika>
+              <Link href="/post/[slug]" as={`/post/${post.node.slug}`}>
+                <ObjavaHeading>{post.node.title}</ObjavaHeading>
               </Link>
-              
-              <ObjavaVreme>{moment(post.published_at).format('MMM DD, YYYY')}</ObjavaVreme>
-              <ObjavaP>{post.custom_excerpt}</ObjavaP>
-              <Link href="/post/[slug]" as={`/post/${post.slug}`} passHref>
-              <ObjavaButton >Pročitaj više <ButtonIcon></ButtonIcon></ObjavaButton>
+              <HorizontalStack>
+                <AuthorWrap>
+              <AuthorSlika src={post.node.author.photo.url}></AuthorSlika>
+              </AuthorWrap>
+              <ObjavaVreme>
+              <svg xmlns="http://www.w3.org/2000/svg"  
+              style={{ height:'1.5rem', width: '1.5rem', verticalAlign: 'bottom', marginRight: '0.5rem' }}
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+                {moment(post.node.createdAt).format("MMM DD, YYYY")}
+              </ObjavaVreme>
+              </HorizontalStack>
+              <ObjavaP>{post.node.excerpt}</ObjavaP>
+              <Link href="/post/[slug]" as={`/post/${post.node.slug}`} passHref>
+                <ObjavaButton>
+                  Pročitaj Više 
+                </ObjavaButton>
               </Link>
             </Objava>
-            
           );
         })}
-        <ObjavaP>Coming Soon&trade;...</ObjavaP>
+        
       </ObjaveContainer>
     </BlogSectionContainer>
   );
