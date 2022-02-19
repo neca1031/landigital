@@ -32,7 +32,12 @@ const FormaSection = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      data: (values, token)
+       data: {
+         ime: values.ime,
+         email: values.email,
+         poruka: values.poruka,
+         token
+       }
       
     };
     try {

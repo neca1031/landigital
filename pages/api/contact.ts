@@ -15,12 +15,11 @@ async function validateHuman(token: string): Promise<boolean> {
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const { ime, email, poruka } = req.body;
-  const token = req.body;
+  const { ime, email, poruka, token } = req.body;
   const human = await validateHuman(token);
   if (!human) {
     res.status(400);
-    console.log(token);
+    res.json({errors: ["Botino jedna"]})
     console.log("Botino jedna");
     return;
   }
