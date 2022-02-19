@@ -26,7 +26,9 @@ const BlogSection = ({ posts }: { posts: any }) => {
         {posts.map((post: any) => {
           return (
             <Objava key={post.node.title}>
+              <Link href="/post/[slug]" as={`/post/${post.node.slug}`}>
               <Slika src={post.node.featuredImage.url}></Slika>
+              </Link>
               <Link href="/post/[slug]" as={`/post/${post.node.slug}`}>
                 <ObjavaHeading>{post.node.title}</ObjavaHeading>
               </Link>
