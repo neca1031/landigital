@@ -135,7 +135,7 @@ margin-right: auto;
 margin-left: 1rem;
 font-size: 1rem;
 @media (max-width: 20em) {
-    font-size: 1rem;
+    font-size: 0.85rem;
     padding: 0.8rem 1.2rem
 }
 line-height: 1;
@@ -152,6 +152,7 @@ cursor: pointer;
 
 export const SidebarMenu = styled.div`
  display: grid;
+ margin-top: 3rem;
  grid-template-columns: 1fr;
  grid-template-rows: repeat(6, 80px);
  text-align: center;

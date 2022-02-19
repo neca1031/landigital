@@ -5,7 +5,6 @@ import {
   Header,
   NavItem,
   NavButton,
-  Mobile,
   HeroWrapper,
   HeroContent,
   HWrapper,
@@ -16,11 +15,11 @@ import {
   P,
   HButton,
   HeroContainer,
+  MenuIcon,
 } from "./HeroStyles";
-import Link from 'next/link'
+import Link from "next/link";
 
-
-const Hero = ({ toggle }: {toggle:any}) => {
+const Hero = ({ toggle }: { toggle: any }) => {
   return (
     <>
       <HeroWrapper>
@@ -28,7 +27,29 @@ const Hero = ({ toggle }: {toggle:any}) => {
           <Link href="/">
             <NavLogo src={"/lan-logo1.png"}></NavLogo>
           </Link>
-          <Mobile onClick={toggle}></Mobile>
+
+          <MenuIcon onClick={toggle}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                height: "2.3rem",
+                width: "2.3rem",
+                verticalAlign: "bottom",
+                color: "white",
+              }}
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </MenuIcon>
           <NavItems>
             <NavItem href="/">Početna</NavItem>
             <NavItem href="/blog">Blog</NavItem>
@@ -54,8 +75,8 @@ const Hero = ({ toggle }: {toggle:any}) => {
                   Prepustite sav težak rad nama i uživajte u svom novom sajtu.
                 </P>
               </PWrapper>
-              <Link href='forma'>
-              <HButton>Kontaktirajte nas</HButton>
+              <Link href="forma">
+                <HButton>Kontaktirajte nas</HButton>
               </Link>
             </HWrapper>
           </HeroContent>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   Input,
   TextArea,
@@ -8,11 +8,13 @@ import {
   SuccessMessage,
 } from "./FormaSectionStyles";
 import { useForm } from "react-hook-form";
+import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
 import { Oval } from "react-loader-spinner";
 
 const FormaSection = () => {
   const [success, setSuccess] = useState(false);
+  const reRef = useRef();
   const {
     register,
     handleSubmit,
@@ -22,13 +24,16 @@ const FormaSection = () => {
   } = useForm();
   const { isSubmitting } = formState;
   async function onSubmitForm(values) {
+    const token = await reRef.current.executeAsync();
+    reRef.current.reset();
     let config = {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
-      data: values,
+      data: (values, token)
+      
     };
     try {
       const response = await axios(config);
@@ -42,6 +47,11 @@ const FormaSection = () => {
   }
   return (
     <>
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        size="invisible"
+        ref={reRef}
+      />
       <FormStyled onSubmit={handleSubmit(onSubmitForm)}>
         <Input
           type="text"

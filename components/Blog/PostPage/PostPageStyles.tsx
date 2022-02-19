@@ -4,7 +4,7 @@ import { FaArrowLeft, FaBars } from "react-icons/fa";
 
 export const HeroWrapper = styled.div`
   width: 100%;
-  min-height: 40vh;
+  min-height: 35vh;
   background-image: linear-gradient(
       to bottom,
       rgba(36, 42, 86, 0.8),
@@ -20,7 +20,6 @@ export const AuthorImage = styled.img`
   height: 100px;
   width: 100px;
   vertical-align: middle;
-  
 `;
 
 export const AuthorName = styled.h3`
@@ -50,7 +49,6 @@ export const AuthorImageContainer = styled.div`
   top: -3.5rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 100%;
-  
 `;
 
 export const HeroContent = styled.div`
@@ -183,9 +181,29 @@ export const NavItems = styled.div`
   }
 `;
 
+export const MenuIcon = styled.div`
+z-index: 20;
+cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  display: none;
+  padding: 0.5rem;
+  border-radius: 12px;
+  
+  @media (max-width: 60em) {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    flex-flow: column nowrap;
+  }
+
+
+`
+
 export const Mobile = styled(FaBars)`
   z-index: 20;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -193,7 +211,7 @@ export const Mobile = styled(FaBars)`
   display: none;
   color: #fff;
   background: #6878d6;
-  border-radius: 6px;
+  border-radius: 2px;
 
   padding: 0.5rem;
 
@@ -218,7 +236,7 @@ export const NavItem = styled.a`
   margin-right: 1rem;
   font-weight: 100;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #fff;
     height: 3px;
@@ -392,7 +410,6 @@ export const PostContent = styled.div`
   color: #393a56;
   text-align: left;
   overflow: hidden;
-  
 `;
 
 export const BackButton = styled.button`

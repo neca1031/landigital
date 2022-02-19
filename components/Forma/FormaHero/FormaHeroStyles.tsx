@@ -44,9 +44,7 @@ export const HWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 5rem;
-  @media (max-width: 50em) {
-    margin-bottom: 6rem;
-  }
+  
 `;
 
 export const H2Wrapper = styled.div`
@@ -102,7 +100,7 @@ export const H2 = styled.h1`
     text-align: center;
   }
   @media (max-width: 40em) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   @media (max-width: 20em) {
@@ -164,7 +162,7 @@ export const NavItems = styled.div`
 
 export const Mobile = styled(FaBars)`
   z-index: 20;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   justify-content: space-around;
@@ -172,7 +170,7 @@ export const Mobile = styled(FaBars)`
   display: none;
   color: #fff;
   background: #6878d6;
-  border-radius: 6px;
+  border-radius: 2px;
 
   padding: 0.5rem;
 
@@ -183,6 +181,26 @@ export const Mobile = styled(FaBars)`
     flex-flow: column nowrap;
   }
 `;
+
+export const MenuIcon = styled.div`
+z-index: 20;
+cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  display: none;
+  padding: 0.5rem;
+  border-radius: 12px;
+  
+  @media (max-width: 60em) {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    flex-flow: column nowrap;
+  }
+
+
+`
 export const NavItem = styled.a`
   cursor: pointer;
   text-align: center;

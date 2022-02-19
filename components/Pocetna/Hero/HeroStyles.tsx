@@ -185,7 +185,7 @@ export const Mobile = styled(FaBars)`
   flex-flow: column nowrap;
   display: none;
   color: #fff;
-  background: #6878d6;
+  background: transparent;
   border-radius: 2px;
 
   padding: 0.5rem;
@@ -197,6 +197,26 @@ export const Mobile = styled(FaBars)`
     flex-flow: column nowrap;
   }
 `;
+
+export const MenuIcon = styled.div`
+z-index: 20;
+cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  display: none;
+  padding: 0.5rem;
+  border-radius: 12px;
+  
+  @media (max-width: 60em) {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    flex-flow: column nowrap;
+  }
+
+
+`
 export const NavItem = styled.a`
   cursor: pointer;
   text-align: center;
