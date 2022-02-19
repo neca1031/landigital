@@ -1,4 +1,5 @@
 import React from "react";
+import { RichText } from '@graphcms/rich-text-react-renderer';
 import {
   NavLogo,
   NavItems,
@@ -31,72 +32,7 @@ import moment from "moment";
 import Link from "next/link";
 
 const PostPage = ({ toggle, post }: { toggle: any; post: any }) => {
-  const getContentFragment = (index: any, text: any, obj: any, type: any) => {
-    let modifiedText = text;
-
-    if (obj) {
-      if (obj.bold) {
-        modifiedText = <b key={index}>{text}</b>;
-      }
-
-      if (obj.italic) {
-        modifiedText = <em key={index}>{text}</em>;
-      }
-
-      if (obj.underline) {
-        modifiedText = <u key={index}>{text}</u>;
-      }
-    }
-
-    switch (type) {
-      case "heading-three":
-        return (
-          <Heading3 key={index}>
-            {modifiedText.map((item: any, i: any) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </Heading3>
-        );
-      case "paragraph":
-        return (
-          <Paragraph key={index}>
-            {modifiedText.map((item: any, i: any) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </Paragraph>
-        );
-      case "heading-four":
-        return (
-          <Heading4 key={index}>
-            {modifiedText.map((item: any, i: any) => (
-              <React.Fragment key={i}>{item}</React.Fragment>
-            ))}
-          </Heading4>
-        );
-      case "image":
-        return (
-          <img
-            key={index}
-            alt={obj.title}
-            height={obj.height}
-            width={obj.width}
-            src={obj.src}
-          />
-        );
-      case "link":
-        return (
-          <a key={index} href={obj.url}>
-            {modifiedText.map((item: any, i: any) => (
-              
-              <React.Fragment key={i}>{item}</React.Fragment>
-              
-            ))}
-          </a>
-        );
-      default:
-        return modifiedText;
-    }
-  };
+  
   return (
     <>
       <HeroWrapper>
@@ -155,12 +91,7 @@ const PostPage = ({ toggle, post }: { toggle: any; post: any }) => {
           </Stack>
           <PostHeading>{post.title}</PostHeading>
           <PostContent>
-            {post.content.raw.children.map((typeObj : any, index : any) => {
-              const children = typeObj.children.map((item : any, itemIndex : any) =>
-                getContentFragment(itemIndex, item.text, item, null)
-              );
-              return getContentFragment(index, children, typeObj, typeObj.type);
-            })}
+            <RichText content={post.content.raw} />
           </PostContent>
         </ThePost>
         <AuthorContainer>

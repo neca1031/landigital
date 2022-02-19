@@ -20,6 +20,7 @@ export const AuthorImage = styled.img`
   height: 100px;
   width: 100px;
   vertical-align: middle;
+  
 `;
 
 export const AuthorName = styled.h3`
@@ -47,6 +48,8 @@ export const AuthorBio = styled.p`
 export const AuthorImageContainer = styled.div`
   position: absolute;
   top: -3.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 100%;
   
 `;
 
@@ -320,6 +323,7 @@ export const AuthorContainer = styled.div`
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 2rem;
+    padding-top: 3rem;
   }
 `;
 
