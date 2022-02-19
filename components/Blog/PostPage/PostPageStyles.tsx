@@ -392,9 +392,7 @@ export const PostContent = styled.div`
   color: #393a56;
   text-align: left;
   overflow: hidden;
-  @media (max-width: 40em) {
-    font-size: 0.92rem;
-  }
+  
 `;
 
 export const BackButton = styled.button`
