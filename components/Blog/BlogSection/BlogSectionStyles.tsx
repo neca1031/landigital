@@ -78,7 +78,7 @@ export const ObjavaHeading = styled.h4`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
   color: #242a56;
   font-size: 1.25rem;
-  line-height: 1;
+  line-height: 1.2;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-decoration: none;
