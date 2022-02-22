@@ -9,6 +9,7 @@ import { PortfolioWrapper,
          
 } from './PortfolioStyles'
 
+
 const Portfolio = () => {
     return (
         <PortfolioWrapper>
@@ -20,6 +21,7 @@ const Portfolio = () => {
                </PortfolioInfo>
                <RadoviContainer>
                    <Rad>
+
                       <RadImg src={'/flex.jpeg'}>
 
                       </RadImg>
@@ -28,17 +30,21 @@ const Portfolio = () => {
                       </RadIme>
                    </Rad>
                    <Rad>
+                       <a target='_blank' href='http://cms.porsche-clubs.com/PorscheClubs/pc_serbia/pc_main.nsf/web/C12581100034FAE3C1257EFA003F7CC4'>
                    <RadImg src={'/porsche.jpeg'}>
 
                  </RadImg>
+                 </a>
                     <RadIme>
                        Porsche Club Serbia
                      </RadIme>   
                    </Rad>
                    <Rad>
+                       <a target='_blank' href='https://janovic-camping.com'>
                    <RadImg src={'/janovic.jpeg'}>
 
                     </RadImg>
+                    </a>
                      <RadIme>
                          Janovic Camping
                           </RadIme>
