@@ -30,7 +30,7 @@ const Portfolio = () => {
                       </RadIme>
                    </Rad>
                    <Rad>
-                       <a target='_blank' href='http://cms.porsche-clubs.com/PorscheClubs/pc_serbia/pc_main.nsf/web/C12581100034FAE3C1257EFA003F7CC4'>
+                       <a target='_blank' rel="noreferrer" href='http://cms.porsche-clubs.com/PorscheClubs/pc_serbia/pc_main.nsf/web/C12581100034FAE3C1257EFA003F7CC4'>
                    <RadImg src={'/porsche.jpeg'}>
 
                  </RadImg>
@@ -40,7 +40,7 @@ const Portfolio = () => {
                      </RadIme>   
                    </Rad>
                    <Rad>
-                       <a target='_blank' href='https://janovic-camping.com'>
+                       <a target='_blank' rel="noreferrer" href='https://janovic-camping.com'>
                    <RadImg src={'/janovic.jpeg'}>
 
                     </RadImg>
