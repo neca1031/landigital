@@ -39,7 +39,7 @@ const UslugeLista = () => {
             Vašim brendom i predstavlja najbolju biznis investiciju koju možete
             da napravite.
           </UslugaP>
-          <UslugaHeading2>Usluge koje nudimo:</UslugaHeading2>
+          <UslugaHeading2>Usluge koje nudimo</UslugaHeading2>
           <ArrowButton>
             <svg
               xmlns="http://www.w3.org/2000/svg"
