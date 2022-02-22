@@ -43,7 +43,7 @@ Koristeći pouzdane tehnologije, trudimo se da Vaš biznis postavimo u sam vrh o
                     Pored izrade veb-sajtova nudimo i usluge vođenja profila na društvenim mrežama koje su u digitalnom svetu jedan od najbitnijih faktora za rast biznisa.
                     </UslugaP>
                 </Usluga>
-                <Usluga>
+                {/* <Usluga>
                     <UslugaIcon3>
 
                     </UslugaIcon3>
@@ -53,7 +53,7 @@ Koristeći pouzdane tehnologije, trudimo se da Vaš biznis postavimo u sam vrh o
                     <UslugaP>
                     Kreiranje marketinških kampanja na društvenim mrežama ili na samom sajtu ume da predstavlja težak posao. Mi se trudimo da taj posao olakšamo i predstavimo Vaš biznis u najboljem svetlu.
                     </UslugaP>
-                </Usluga>
+                </Usluga> */}
             </UslugeContainer>
         </UslugeHeroWrapper>
     )

@@ -19,7 +19,7 @@ const Team = () => {
                     Nemanja
                     </EmployeeName>
                     <Occupation>
-                    Frontend developer
+                    Frontend Developer
                     </Occupation>
                 </Employee>
                 <Employee>
@@ -30,7 +30,7 @@ const Team = () => {
                     Aleksa
                     </EmployeeName>
                     <Occupation>
-                    WordPress Developer
+                    Marketing Ekspert
                     </Occupation>
                 </Employee>
                 <Employee>

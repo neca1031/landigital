@@ -125,7 +125,7 @@ export const HButton = styled.button`
   background: #6878d6;
   font-size: 0.9375rem;
   line-height: 1;
-  margin: 2rem 0px 0px 0px;
+  margin: 0px 0px 1rem 0px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 1rem 2rem;

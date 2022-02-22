@@ -39,7 +39,7 @@ export const UslugeHeading = styled.h2`
 
 export const UslugeContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1.2rem;
   margin-bottom: 5rem;
   margin-left: 7rem;
@@ -53,6 +53,16 @@ export const UslugeContainer = styled.div`
   }
 `;
 
+export const ArrowButton = styled.div`
+  margin-right: auto;
+  border: none;
+  background-color: #fff;
+  color:#242a56;
+  margin-left: auto;
+  
+
+`;
+
 export const Usluga = styled.div`
   background-color: #fff;
   display: flex;
@@ -64,6 +74,33 @@ export const Usluga = styled.div`
     padding: 1.5em 2em;
   }
 `;
+
+export const UslugaList = styled.ul`
+  background-color: #fff;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  padding: 0em 2.5em;
+  color: #242a56;
+  
+`;
+
+export const ListItem = styled.div`
+  background-color: #fff;
+  font-size: 1.25rem;
+  margin: 1.5em 0em;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  font-family: sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  background-color: #f1f5f9;
+  color: #242a56;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  
+`;
+
+
 
 export const UslugaIcon = styled(FaObjectGroup)`
   font-size: 2.7rem;
@@ -91,6 +128,18 @@ export const UslugaHeading = styled.h4`
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-align: left;
+`;
+
+export const UslugaHeading2 = styled.h4`
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+  color: #242a56;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const UslugaP = styled.p`

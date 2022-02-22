@@ -11,6 +11,7 @@ export const ContactForm = styled.div`
  margin-left: 3rem;
  margin-right: 3rem;
  margin-bottom: 3rem;
+ margin-top: 3rem;
  display: flex;
  padding: 2rem;
  border-radius: 6px;

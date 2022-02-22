@@ -66,7 +66,7 @@ const Hero = ({ toggle }: { toggle: any }) => {
             <HWrapper>
               <H4>Mladi i preduzimljivi</H4>
               <H2Wrapper>
-                <H2>Vaše ideje, naše umeće</H2>
+                <H2>Vaše onlajn prisustvo nam je važno.</H2>
               </H2Wrapper>
               <PWrapper>
                 <P>

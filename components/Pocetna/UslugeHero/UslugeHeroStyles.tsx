@@ -33,7 +33,7 @@ export const UslugeHeading = styled.h2`
 
 export const UslugeContainer = styled.div`
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 1.2rem;
    margin-bottom: 5rem;
    margin-left: 7rem;

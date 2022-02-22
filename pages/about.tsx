@@ -33,7 +33,7 @@ const About: NextPage = () => {
         <Mission />
         <Proces />
         <AccordionSection />
-        <Brojke />
+        
         <ReusableFormRedirect />
         <Footer />
       </>
