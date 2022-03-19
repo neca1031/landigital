@@ -87,7 +87,6 @@ export const Accordion = styled.div`
   margin-right: 3.75rem;
   @media (max-width: 40em) {
     margin-right: 0;
-    
   }
 `;
 
@@ -116,10 +115,10 @@ export const AccordionHeading = styled.p`
   display: inline-block;
   text-align: left;
   line-height: 1;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: ${(props) => (props.expand === props.index ? "#6878d6" : "#393a56")};
+  color: ${(props) => (props.expand ? "#6878d6" : "#393a56")};
 `;
 
 export const AccordionExpandIcon = styled.div`
@@ -127,26 +126,27 @@ export const AccordionExpandIcon = styled.div`
   text-align: right;
   width: 1.5em;
   line-height: 1;
-  color: ${(props) => (props.expand === props.index ? "#6878d6" : "#393a56")};
+  color: ${(props) => (props.expand ? "#6878d6" : "#393a56")};
   font-size: 1rem;
 `;
 
 export const AccordionInfoElement = styled.div`
-  padding: ${(props) =>
-    props.expand === props.index ? "0.9375rem 1.25rem" : "0 1.25rem"};
-  max-height: ${(props) => (props.expand === props.index ? "1000px" : "0")};
-  transition: padding 0.2s linear;
+  transition: max-height 0.7s ease-in-out;
   overflow: hidden;
   background-color: #ffffff;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border: 1px solid #d4d4d4;
+  border-color: rgba(208, 216, 234, 0.25);
 `;
 
 export const AccordionInfo = styled.p`
   text-align: left;
   line-height: 1.6;
   color: #393a56;
+  padding: 1rem;
   font-size: 1rem;
   margin: 0;
-  margin-bottom: 1.6em;
   font-family: "Open Sans", sans-serif;
   @media (max-width: 40em) {
     font-size: 0.92rem;
