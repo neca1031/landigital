@@ -21,10 +21,11 @@ const Portfolio = () => {
                </PortfolioInfo>
                <RadoviContainer>
                    <Rad>
-
-                      <RadImg src={'/flex.jpeg'}>
+                   <a target='_blank' rel="noreferrer" href='https://flexteam.rs'>
+                      <RadImg src={'/flex.png'}>
 
                       </RadImg>
+                      </a>
                       <RadIme>
                           Flex Team
                       </RadIme>
