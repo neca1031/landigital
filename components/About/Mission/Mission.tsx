@@ -16,30 +16,31 @@ const Mission = () => {
       <MissionWrap>
         <TheMission>
           <Span></Span>
-          <MissionHeading>Ko smo mi</MissionHeading>
+          <MissionHeading>Who are we?</MissionHeading>
           <MissionInfo>
-            Lan digital su osnovala tri druga, Aleksa, Nemanja i Luka u želji da
-            svoj talenat pretvore u nešto korisno. Kao momci koji su odrasli “za
-            računarom” prosto nismo mogli da izaberemo bolje zanimanje.
+            LAN Digital was created by three friends - Aleksa, Nemanja and Luka
+            started this agency to turn their talent into something useful. As
+            guys who "grew up in front of a computer", we simply could not have
+            chosen a better career.
           </MissionInfo>
         </TheMission>
         <TheMission>
           <Span></Span>
-          <MissionHeading>Naša misija</MissionHeading>
+          <MissionHeading>Our Mission</MissionHeading>
           <MissionInfo>
-            Želja nam je da pomoću svog talenta pomognemo što većem broju ljudi
-            da plasira svoj biznis na tržište. Nudeći raznolik spektar usluga,
-            spremni smo da svačiji posao dignemo na viši nivo.
+            Our wish is to use our talent to help as many people as possible
+            place their business on the market. Providing a variety of services,
+            we are ready to raise clients' businesses to the next level.
           </MissionInfo>
         </TheMission>
         <TheMission>
           <Span></Span>
-          <MissionHeading>Čime se bavimo</MissionHeading>
+          <MissionHeading>What do we do?</MissionHeading>
           <MissionInfo>
             <List>
-              <ListItem>Izrada veb-sajtova</ListItem>
-              <ListItem>Vođenje društvenih mreža</ListItem>
-              <ListItem>Marketing</ListItem>
+              <ListItem>Web Development</ListItem>
+              <ListItem>Manage and Run Social Media</ListItem>
+              <ListItem>Marketing & Advertisement</ListItem>
             </List>
           </MissionInfo>
         </TheMission>

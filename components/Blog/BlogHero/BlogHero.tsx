@@ -15,7 +15,7 @@ import {
   PWrapper,
   P,
   HeroContainer,
-  MenuIcon
+  MenuIcon,
 } from "./BlogHeroStyles";
 import Link from "next/link";
 
@@ -27,35 +27,35 @@ const BlogHero = ({ toggle }: { toggle: any }) => {
           <NavLogo src={"/lan-logo1.png"}></NavLogo>
         </Link>
         <MenuIcon onClick={toggle}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              style={{
-                height: "2.3rem",
-                width: "2.3rem",
-                verticalAlign: "bottom",
-                color: "white",
-              }}
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </MenuIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              height: "2.3rem",
+              width: "2.3rem",
+              verticalAlign: "bottom",
+              color: "white",
+            }}
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </MenuIcon>
         <NavItems>
-          <NavItem href="/">Početna</NavItem>
+          <NavItem href="/">Home</NavItem>
           <NavItem href="/blog">Blog</NavItem>
-          <NavItem href="/about">O nama</NavItem>
-          <NavItem href="/usluge">Usluge</NavItem>
-          <NavItem href="/kontakt">Kontakt</NavItem>
+          <NavItem href="/about">About Us</NavItem>
+          <NavItem href="/usluge">Services</NavItem>
+          <NavItem href="/kontakt">Contact</NavItem>
           <Link href="/forma" passHref>
-            <NavButton>Pošaljite upit</NavButton>
+            <NavButton>Contact Us</NavButton>
           </Link>
         </NavItems>
       </Header>
@@ -63,13 +63,13 @@ const BlogHero = ({ toggle }: { toggle: any }) => {
         <HeroContent>
           <HWrapper>
             <H2Wrapper>
-              <H2>Dobrodošli na naš Blog</H2>
+              <H2>Welcome to our Blog</H2>
             </H2Wrapper>
 
             <PWrapper>
               <P>
-                U našim objavama možete pročitati o relevantnim i zanimljivim
-                temama iz sveta digitalnog marketinga
+                In our posts you can read about relevant and interesting topics
+                from the world of digital marketing.
               </P>
             </PWrapper>
           </HWrapper>

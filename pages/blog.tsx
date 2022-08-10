@@ -1,15 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { getPosts } from '../services'
+import { getPosts } from "../services";
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
 import BlogSection from "../components/Blog/BlogSection/BlogSection";
 import BlogHero from "../components/Blog/BlogHero/BlogHero";
-
-
-
-
 
 export const getStaticProps = async () => {
   const posts = await getPosts();
@@ -18,7 +14,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const Blog: NextPage = ( {posts} : any ) => {
+const Blog: NextPage = ({ posts }: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -27,10 +23,10 @@ const Blog: NextPage = ( {posts} : any ) => {
   return (
     <>
       <Head>
-        <title>Lan Digital | Blog</title>
+        <title>LAN Digital | Blog</title>
         <meta
           name="description"
-          content="LAN Digital je tu da Vašem biznisu pruži digitalni temelj na kom može da raste."
+          content="LAN Digital is here to provide your business with a digital foundation on which to grow."
         />
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -48,4 +44,3 @@ const Blog: NextPage = ( {posts} : any ) => {
 };
 
 export default Blog;
-

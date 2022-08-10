@@ -10,10 +10,8 @@ import {
 const Klijenti = () => {
   return (
     <KlijentiWrapper>
-      <KlijentiHeading>Naši klijenti</KlijentiHeading>
-      <KlijentiInfo>
-        Neki od naših prethodnih klijenata sa kojima smo imali uspešnu saradnju.
-      </KlijentiInfo>
+      <KlijentiHeading>Our Clients</KlijentiHeading>
+      <KlijentiInfo>Some of our previous satisfied clients.</KlijentiInfo>
       <KlijentiContainer>
         <Klijent src={"/jano-logo.png"}></Klijent>
         <Klijent src={"/por-logo.jpeg"}></Klijent>

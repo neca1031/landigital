@@ -19,8 +19,8 @@ const Footer = () => {
         <ContactSection>
           <FooterLogo src={"/lan-logo1.png"}></FooterLogo>
           <Contact>
-            Imate ideju i treba Vam pomoć? <br />
-            Kontaktirajte nas <br />
+            Got an idea and need help? <br />
+            Contact Us <br />
             <Link href="mailto:info@lan-digital.com">
               info@lan-digital.com{" "}
             </Link>

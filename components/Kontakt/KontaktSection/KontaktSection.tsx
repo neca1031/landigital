@@ -27,23 +27,21 @@ const KontaktSection = () => {
             <FormText>
               <FormHeading>Želite da započnete saradnju sa nama?</FormHeading>
               <FormInfo>
-                Potrebna Vam je izrada sajta ili vođenje društvenih mreža?
+                You need to build a website or social media managment?
                 <br />
-                Na pravom ste mestu!
+                You are at the right place!
               </FormInfo>
             </FormText>
             <ButtonContainer>
               <Link href="/forma">
-                <FormButton>kontakirajte nas</FormButton>
+                <FormButton>contact us</FormButton>
               </Link>
             </ButtonContainer>
           </ContactForm>
         </ContactFormContainer>
         <StupiteKontaktWrap>
-          <StupiteKontaktHeading>Stupite u kontakt</StupiteKontaktHeading>
-          <StupiteKontaktSubHeading>
-            Pošaljite nam e-mail
-          </StupiteKontaktSubHeading>
+          <StupiteKontaktHeading>Get in Touch</StupiteKontaktHeading>
+          <StupiteKontaktSubHeading>Send us an email</StupiteKontaktSubHeading>
           <EmailWrap>
             <EmailIcon></EmailIcon>
             <Email href="mailto:info@lan-digital.com">
