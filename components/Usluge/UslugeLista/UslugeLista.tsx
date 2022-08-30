@@ -24,7 +24,7 @@ const UslugeLista = () => {
         <UslugeHeading>How Can We Help You?</UslugeHeading>
         <UslugaSubHeading>
           Web development, social media management or both?
-          <br /> Whatever you need, you're in the right place.
+          <br /> Whatever you need, you&apos;re in the right place.
         </UslugaSubHeading>
       </HeadingWrap>
       <UslugeContainer>
@@ -33,11 +33,11 @@ const UslugeLista = () => {
           <UslugaHeading>Web Development</UslugaHeading>
           <UslugaP>
             Nowadays, it is difficult to imagine a successful business without a
-            website. If you don't have a website yet, we will build one for you.
-            Using reliable technologies, we strive to place your business at the
-            very top of the web. A quality website gives you complete control
-            over your brand and represents the best business investment you can
-            make.
+            website. If you don&apos;t have a website yet, we will build one for
+            you. Using reliable technologies, we strive to place your business
+            at the very top of the web. A quality website gives you complete
+            control over your brand and represents the best business investment
+            you can make.
           </UslugaP>
           <UslugaHeading2>Services we offer</UslugaHeading2>
           <ArrowButton>

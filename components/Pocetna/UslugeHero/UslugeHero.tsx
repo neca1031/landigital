@@ -21,9 +21,9 @@ const UslugeHero = () => {
           <UslugaHeading>Web Development</UslugaHeading>
           <UslugaP>
             Nowadays, it is difficult to imagine a successful business without a
-            website. If you don't have a website yet, we will build one for you.
-            Using reliable technologies, we strive to place your business at the
-            very top of the web.
+            website. If you don&apos;t have a website yet, we will build one for
+            you. Using reliable technologies, we strive to place your business
+            at the very top of the web.
           </UslugaP>
         </Usluga>
         <Usluga>
