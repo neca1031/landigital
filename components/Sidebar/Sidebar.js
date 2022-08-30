@@ -28,27 +28,26 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarItem href="/">
             <HomeIcon></HomeIcon>
-            Početna
+            Home
           </SidebarItem>
           <SidebarItem href="/blog">
             <BlogIcon></BlogIcon>
             Blog
           </SidebarItem>
           <SidebarItem href="/about">
-            <AboutIcon></AboutIcon>O nama
+            <AboutIcon></AboutIcon>About Us
           </SidebarItem>
           <SidebarItem href="/usluge">
             <ServicesIcon></ServicesIcon>
-            Usluge
+            Services
           </SidebarItem>
           <SidebarItem href="/kontakt">
-            <ContactIcon></ContactIcon>Kontakt
+            <ContactIcon></ContactIcon>Contact
           </SidebarItem>
-          
         </SidebarMenu>
         <SideBtnWrap>
           <Link href="/forma">
-            <SidebarBtn>Pošaljite upit</SidebarBtn>
+            <SidebarBtn>Contact Us</SidebarBtn>
           </Link>
         </SideBtnWrap>
       </SidebarWrapper>

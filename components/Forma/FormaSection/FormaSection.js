@@ -32,13 +32,12 @@ const FormaSection = () => {
       headers: {
         "Content-Type": "application/json",
       },
-       data: {
-         ime: values.ime,
-         email: values.email,
-         poruka: values.poruka,
-         token
-       }
-      
+      data: {
+        ime: values.ime,
+        email: values.email,
+        poruka: values.poruka,
+        token,
+      },
     };
     try {
       const response = await axios(config);
@@ -60,15 +59,15 @@ const FormaSection = () => {
       <FormStyled onSubmit={handleSubmit(onSubmitForm)}>
         <Input
           type="text"
-          placeholder="Ime"
+          placeholder="Name"
           {...register("ime", {
             required: {
               value: true,
-              message: "Ovo polje je obavezno.",
+              message: "This field is required.",
             },
             minLength: {
               value: 2,
-              message: "Prekratka reč da bi bila ime. (Manje od 3 karaktera.)",
+              message: "Too short to be a name. Needs 3 or more characters.",
             },
           })}
         />
@@ -80,30 +79,31 @@ const FormaSection = () => {
           {...register("email", {
             required: {
               value: true,
-              message: "Ovo polje je obavezno.",
+              message: "This field is required.",
             },
             pattern: {
               value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-              message: "Ovo nije validna email adresa",
+              message: "This is not a valid email address",
             },
           })}
         />
         <ErrorMessage>{errors?.email?.message}</ErrorMessage>
 
         <TextArea
-          placeholder="Vaša poruka"
+          placeholder="Your Message"
           {...register("poruka", {
             required: {
               value: true,
-              message: "Ovo polje je obavezno.",
+              message: "This field is required.",
             },
             minLength: {
               value: 5,
-              message: "Prekratka poruka. (Manje od 5 karaktera.)",
+              message: "The message is too short. Needs 5 or more characters.",
             },
             maxLength: {
               value: 5000,
-              message: "Predugačka poruka, mora imati manje od 5000 karaktera.",
+              message:
+                "The message is too long. Needs to have less than 5000 characters.",
             },
           })}
         />
@@ -113,10 +113,14 @@ const FormaSection = () => {
           {isSubmitting ? (
             <Oval color="white" height={20} width={20} />
           ) : (
-            <>POŠALJI UPIT</>
+            <>SEND</>
           )}{" "}
         </FormButton>
-        {success && <SuccessMessage>Uspešno ste poslali upit!</SuccessMessage>}
+        {success && (
+          <SuccessMessage>
+            You have successfully submitted the form!
+          </SuccessMessage>
+        )}
       </FormStyled>
     </>
   );

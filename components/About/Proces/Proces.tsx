@@ -12,46 +12,49 @@ import {
 const Proces = () => {
   return (
     <ProcesContainer>
-      <ProcesHeading>Naš kreativni proces</ProcesHeading>
+      <ProcesHeading>Our Creative Process</ProcesHeading>
       <KoraciWrap>
         <Korak>
           <KorakBroj>01.</KorakBroj>
-          <KorakHeading>Kontaktiranje</KorakHeading>
-          <KorakInfo>
-            Odlučili ste se na pr(a)vi korak i kontaktirali nas.
-          </KorakInfo>
+          <KorakHeading>Contact</KorakHeading>
+          <KorakInfo>You decided on the first step and contacted us.</KorakInfo>
         </Korak>
         <Korak>
           <KorakBroj>02.</KorakBroj>
-          <KorakHeading>Definisanje</KorakHeading>
-          <KorakInfo>Zajedničkim snagama definišemo cilj saradnje.</KorakInfo>
+          <KorakHeading>Defining</KorakHeading>
+          <KorakInfo>
+            Together we define the goal of our collaboration.
+          </KorakInfo>
         </Korak>
         <Korak>
           <KorakBroj>03.</KorakBroj>
-          <KorakHeading>Dizajn</KorakHeading>
-          <KorakInfo>Naš tim dizajnira najbolje rešenje za vaš sajt.</KorakInfo>
+          <KorakHeading>Design</KorakHeading>
+          <KorakInfo>
+            Our team crafts the optimal design for your website.
+          </KorakInfo>
         </Korak>
         <Korak>
           <KorakBroj>04.</KorakBroj>
-          <KorakHeading>Razvoj</KorakHeading>
+          <KorakHeading>Development</KorakHeading>
           <KorakInfo>
-            Kada je dizajn gotov, otpočinjemo sa izradom sajta i zajedno pravimo
-            sve potrebne izmene.
+            As soon as the design is finished, we start development on the
+            wesite and make any adjustments on client request.
           </KorakInfo>
         </Korak>
         <Korak>
           <KorakBroj>05.</KorakBroj>
-          <KorakHeading>Objavljivanje</KorakHeading>
+          <KorakHeading>Deployment</KorakHeading>
           <KorakInfo>
-            Vaš sajt je ugledao svetlost dana! Digitalni svet je postao bogatiji
-            za još jednog člana.
+            Your website has been deployed to the world wide web! The digital
+            world has received a new member.
           </KorakInfo>
         </Korak>
         <Korak>
           <KorakBroj>06.</KorakBroj>
-          <KorakHeading>Rastanak</KorakHeading>
+          <KorakHeading>Parting</KorakHeading>
           <KorakInfo>
-            Obe strane su dobile nešto. Vi novi sajt, a mi zadovoljnog klijenta.
+            Both sides got something. You received a new website, and we
+            received a satisfied client.
           </KorakInfo>
         </Korak>
       </KoraciWrap>

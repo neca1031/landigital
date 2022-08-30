@@ -24,10 +24,10 @@ const Home: NextPage = () => {
         <title>Lan Digital - The Cool Digital Agency</title>
         <meta
           name="description"
-          content="LAN Digital je tu da Vašem biznisu pruži digitalni temelj na kom može da raste."
+          content="LAN Digital is here to provide your business with a digital foundation on which to grow."
         />
         <link rel="icon" href="/favicon.ico" />
-        
+
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

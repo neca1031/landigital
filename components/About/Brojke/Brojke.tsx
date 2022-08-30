@@ -12,8 +12,8 @@ const Brojke = () => {
   return (
     <BrojkeContainer>
       <BrojkeWrap>
-      <Brojka>
-        <NaseBrojkeHeading>Naše brojke</NaseBrojkeHeading>
+        <Brojka>
+          <NaseBrojkeHeading>Our Numbers</NaseBrojkeHeading>
         </Brojka>
         <Brojka>
           <Broj>2</Broj>

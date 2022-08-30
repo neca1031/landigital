@@ -23,10 +23,10 @@ const AccordionSection = () => {
       </PictureWrap>
       <AccordionContainer>
         <AccordionContainerPadding>
-          <SectionHeader>Zašto izabrati nas?</SectionHeader>
+          <SectionHeader>Why choose us?</SectionHeader>
           <SectionInfo>
-            Kao momci koji su odrasli u digitalnom okruženju, najspremniji smo
-            da se prilagodimo svakom izazovu.
+            Because we grew up in a digital environment, we are best suited to
+            adapt to every challenge.
           </SectionInfo>
           <AccordionWrap>
             {Data.map((item, index) => {

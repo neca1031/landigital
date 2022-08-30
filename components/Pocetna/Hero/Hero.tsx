@@ -51,32 +51,32 @@ const Hero = ({ toggle }: { toggle: any }) => {
             </svg>
           </MenuIcon>
           <NavItems>
-            <NavItem href="/">Početna</NavItem>
+            <NavItem href="/">Home</NavItem>
             <NavItem href="/blog">Blog</NavItem>
-            <NavItem href="/about">O nama</NavItem>
-            <NavItem href="/usluge">Usluge</NavItem>
-            <NavItem href="/kontakt">Kontakt</NavItem>
+            <NavItem href="/about">About Us</NavItem>
+            <NavItem href="/usluge">Services</NavItem>
+            <NavItem href="/kontakt">Contact</NavItem>
             <Link href="/forma">
-              <NavButton>Pošaljite upit</NavButton>
+              <NavButton>Contact Us</NavButton>
             </Link>
           </NavItems>
         </Header>
         <HeroContainer>
           <HeroContent>
             <HWrapper>
-              <H4>Mladi i preduzimljivi</H4>
+              <H4>Young and enterprising</H4>
               <H2Wrapper>
-                <H2>Vaše onlajn prisustvo nam je važno.</H2>
+                <H2>Your online presence is important to us.</H2>
               </H2Wrapper>
               <PWrapper>
                 <P>
-                  Vaše ideje pretvaramo u stvarnost uz pomoć najpouzdanijih
-                  tehnologija. <br />
-                  Prepustite sav težak rad nama i uživajte u svom novom sajtu.
+                  We turn your ideas into reality with the help of modern
+                  technology. <br />
+                  Leave all the hard work to us and enjoy your new website.
                 </P>
               </PWrapper>
               <Link href="forma">
-                <HButton>Kontaktirajte nas</HButton>
+                <HButton>Contact us</HButton>
               </Link>
             </HWrapper>
           </HeroContent>

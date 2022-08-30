@@ -1,35 +1,28 @@
-import React from 'react'
-import { TestimonialsWrapper,
-          TestimonialsHeading,
-          Testimonial,
-          TestimonialIcon,
-          TestimonialName,
-          TestimonialTitle
-} from './TestimonialsStyles'
-
-
+import React from "react";
+import {
+  TestimonialsWrapper,
+  TestimonialsHeading,
+  Testimonial,
+  TestimonialIcon,
+  TestimonialName,
+  TestimonialTitle,
+} from "./TestimonialsStyles";
 
 const Testimonials = () => {
-    return (
-        <TestimonialsWrapper>
-            <TestimonialsHeading>
-            &quot;Odličan dizajn i dobra saradnja!&quot;
-            </TestimonialsHeading>
-            <Testimonial>
-            Iako su momci jako mladi, pre svega su izuzetno ambiciozni i profesionalni.
-Drago mi je što smo baš njih izabrali za održavanje našeg sajta!
-            </Testimonial>
-            <TestimonialIcon src={'/mg.jpeg'}>
+  return (
+    <TestimonialsWrapper>
+      <TestimonialsHeading>
+        &quot;Excellent design and good collaboration!&quot;
+      </TestimonialsHeading>
+      <Testimonial>
+        Although the guys are very young, above all they are extremely ambitious
+        and professional. I am glad that we chose them to maintain our site!
+      </Testimonial>
+      <TestimonialIcon src={"/mg.jpeg"}></TestimonialIcon>
+      <TestimonialName>Milan Grujić</TestimonialName>
+      <TestimonialTitle>VICE PRESIDENT PORSCHE CLUB SERBIA</TestimonialTitle>
+    </TestimonialsWrapper>
+  );
+};
 
-            </TestimonialIcon>
-            <TestimonialName>
-            Milan Grujić
-            </TestimonialName>
-            <TestimonialTitle>
-            POTPREDSEDNIK PORSCHE KLUBA SRBIJA
-            </TestimonialTitle>
-        </TestimonialsWrapper>
-    )
-}
-
-export default Testimonials
+export default Testimonials;
